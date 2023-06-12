@@ -4,31 +4,61 @@ version = 1
 name = "php"
 
 [[analyzers]]
-name = "docker"
+name = "csharp"
+
+[[analyzers]]
+name = "go"
+
+  [analyzers.meta]
+  import_root = "github.com/Cipher-glitch/SecurityAudit"
+
+[[analyzers]]
+name = "java"
+
+  [analyzers.meta]
+  runtime_version = "11"
+
+[[analyzers]]
+name = "sql"
+
+[[analyzers]]
+name = "test-coverage"
+
+[[analyzers]]
+name = "cxx"
 
 [[analyzers]]
 name = "javascript"
 
+[[analyzers]]
+name = "python"
+
   [analyzers.meta]
-  plugins = [
-    "react",
-    "angular",
-    "vue",
-    "ember",
-    "meteor",
-    "angularjs"
-  ]
-  environment = [
-    "nodejs",
-    "jquery",
-    "browser",
-    "mongo",
-    "jest",
-    "cypress",
-    "mocha",
-    "vitest",
-    "jasmine"
-  ]
+  runtime_version = "3.x.x"
 
 [[analyzers]]
-name = "sql"
+name = "docker"
+
+[[analyzers]]
+name = "ansible"
+
+[[analyzers]]
+name = "secrets"
+
+[[analyzers]]
+name = "terraform"
+
+[[analyzers]]
+name = "ruby"
+
+[[analyzers]]
+name = "rust"
+
+  [analyzers.meta]
+  msrv = "stable"
+
+[[analyzers]]
+name = "shell"
+
+[[analyzers]]
+name = "scala"
